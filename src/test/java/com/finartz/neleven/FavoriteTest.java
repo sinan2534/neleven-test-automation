@@ -30,10 +30,10 @@ public class FavoriteTest {
         .login("sinanyzc2534gmail.com", "karadayi601")
         .searchProduct("samsung")
         .checkSearchProductName("samsung")
-        .openPage(1);
+        .openPage(2);
     String selectProductName = searchPage.getProductNameByIndex(2);
     System.out.println(String.format("Favorilere eklenen urun " + selectProductName));
-    searchPage.addToFavorite(2)
+    searchPage.addToFavorite(3)
         .openAccountPage()
         .openWishList()
         .openMyFavorites()
